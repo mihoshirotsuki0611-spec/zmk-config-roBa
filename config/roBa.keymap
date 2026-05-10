@@ -11,18 +11,6 @@
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <5>;
-
-    // arrows {
-    //     layers = <3>;
-    //     bindings =
-    //         <&kp RIGHT_ARROW>,
-    //         <&kp LEFT_ARROW>,
-    //         <&kp UP_ARROW>,
-    //         <&kp DOWN_ARROW>;
-    //     tick = <10>;
-    //     wait-ms = <5>;
-    //     tap-ms = <5>;
-    // };
 };
 
 / {
@@ -62,6 +50,78 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        globe_h: globe_h {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&macro_press &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>, <&macro_tap &kp H>, <&macro_release &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            label = "GLOBE_H";
+        };
+
+        globe_q: globe_q {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&macro_press &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>, <&macro_tap &kp Q>, <&macro_release &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            label = "GLOBE_Q";
+        };
+
+        globe_s: globe_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&macro_press &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>, <&macro_tap &kp S>, <&macro_release &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            label = "GLOBE_S";
+        };
+
+        globe_c: globe_c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&macro_press &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>, <&macro_tap &kp C>, <&macro_release &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            label = "GLOBE_C";
+        };
+
+        globe_n: globe_n {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&macro_press &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>, <&macro_tap &kp N>, <&macro_release &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            label = "GLOBE_N";
+        };
+
+        globe_a: globe_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&macro_press &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>, <&macro_tap &kp A>, <&macro_release &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            label = "GLOBE_A";
+        };
+
+        globe_e: globe_e {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&macro_press &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>, <&macro_tap &kp E>, <&macro_release &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            label = "GLOBE_E";
+        };
+
+        globe_d: globe_d {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&macro_press &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>, <&macro_tap &kp D>, <&macro_release &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            label = "GLOBE_D";
+        };
     };
 
     behaviors {
@@ -69,7 +129,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
             bindings = <&mo>, <&to_layer_0>;
-
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
@@ -100,19 +159,19 @@
 
         KIGOU {
             bindings = <
-&trans  &trans  &kp AT_SIGN  &trans  &trans                               &kp DOUBLE_QUOTES  &kp HASH       &kp DOLLAR        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans  &trans  &trans       &trans  &trans  &trans      &kp EXCLAMATION  &kp PERCENT        &kp AMPERSAND  &kp SQT           &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&trans  &trans  &trans       &trans  &trans  &trans      &kp QUESTION     &kp TILDE          &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE
-&trans  &trans  &trans       &trans  &trans  &trans      &trans           &trans                                                                    &kp PIPE
+&kp EXCLAMATION  &kp AT     &kp HASH       &kp DOLLAR      &kp PERCENT                                    &kp DOUBLE_QUOTES  &kp HASH       &kp DOLLAR        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp CARET        &kp AMPS   &kp ASTERISK   &kp UNDERSCORE  &kp PLUS     &trans      &kp EXCLAMATION       &kp PERCENT        &kp AMPERSAND  &kp SQT           &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&kp TILDE        &kp GRAVE  &kp BACKSLASH  &kp PIPE        &kp EQUAL    &trans      &kp QUESTION          &kp TILDE          &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE
+&trans           &trans     &trans         &trans          &trans       &trans      &trans                &trans                                                                    &kp PIPE
             >;
         };
 
         ARROW {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp ESCAPE              &kp LS(LC(TAB))     &kp UP_ARROW        &kp LC(TAB)          &kp LC(S)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp HOME                &kp LEFT_ARROW      &kp DOWN_ARROW      &kp RIGHT_ARROW      &kp END
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LS(LG(LEFT_ARROW))  &kp LS(LEFT_ARROW)  &kp RG(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp LS(LG(RIGHT_ARROW))
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                               &trans
+&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &globe_q   &globe_e   &globe_s   &globe_d                         &kp ESCAPE              &kp LS(LC(TAB))     &kp UP_ARROW        &kp LC(TAB)          &kp LC(S)
+&globe_a                              &globe_n   &globe_c   &globe_h   &kp LG(Z)  &trans      &trans    &kp HOME                &kp LEFT_ARROW      &kp DOWN_ARROW      &kp RIGHT_ARROW      &kp END
+&kp LG(Z)                             &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))  &trans  &trans   &kp LS(LG(LEFT_ARROW))  &kp LS(LEFT_ARROW)  &kp RG(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp LS(LG(RIGHT_ARROW))
+&trans                                &trans     &trans     &trans     &kp LG(A)  &trans      &trans    &trans                                                                               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;

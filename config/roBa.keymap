@@ -56,7 +56,14 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings = <&macro_press &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>, <&macro_tap &kp H>, <&macro_release &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            bindings =
+                <&macro_press>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&macro_tap>,
+                <&kp H>,
+                <&macro_release>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+
             label = "GLOBE_H";
         };
 
@@ -65,7 +72,14 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings = <&macro_press &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>, <&macro_tap &kp Q>, <&macro_release &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            bindings =
+                <&macro_press>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&macro_tap>,
+                <&kp Q>,
+                <&macro_release>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+
             label = "GLOBE_Q";
         };
 
@@ -74,7 +88,14 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings = <&macro_press &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>, <&macro_tap &kp S>, <&macro_release &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            bindings =
+                <&macro_press>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+
             label = "GLOBE_S";
         };
 
@@ -83,7 +104,14 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings = <&macro_press &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>, <&macro_tap &kp C>, <&macro_release &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            bindings =
+                <&macro_press>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+
             label = "GLOBE_C";
         };
 
@@ -92,7 +120,14 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings = <&macro_press &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>, <&macro_tap &kp N>, <&macro_release &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            bindings =
+                <&macro_press>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&macro_tap>,
+                <&kp N>,
+                <&macro_release>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+
             label = "GLOBE_N";
         };
 
@@ -101,7 +136,14 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings = <&macro_press &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>, <&macro_tap &kp A>, <&macro_release &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            bindings =
+                <&macro_press>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+
             label = "GLOBE_A";
         };
 
@@ -110,7 +152,14 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings = <&macro_press &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>, <&macro_tap &kp E>, <&macro_release &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            bindings =
+                <&macro_press>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+
             label = "GLOBE_E";
         };
 
@@ -119,7 +168,14 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings = <&macro_press &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>, <&macro_tap &kp D>, <&macro_release &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+            bindings =
+                <&macro_press>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&macro_tap>,
+                <&kp D>,
+                <&macro_release>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+
             label = "GLOBE_D";
         };
     };
@@ -129,6 +185,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
             bindings = <&mo>, <&to_layer_0>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
@@ -159,19 +216,19 @@
 
         KIGOU {
             bindings = <
-&kp EXCLAMATION  &kp AT     &kp HASH       &kp DOLLAR      &kp PERCENT                                    &kp DOUBLE_QUOTES  &kp HASH       &kp DOLLAR        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp CARET        &kp AMPS   &kp ASTERISK   &kp UNDERSCORE  &kp PLUS     &trans      &kp EXCLAMATION       &kp PERCENT        &kp AMPERSAND  &kp SQT           &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&kp TILDE        &kp GRAVE  &kp BACKSLASH  &kp PIPE        &kp EQUAL    &trans      &kp QUESTION          &kp TILDE          &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE
-&trans           &trans     &trans         &trans          &trans       &trans      &trans                &trans                                                                    &kp PIPE
+&kp EXCLAMATION  &kp AT     &kp HASH       &kp DOLLAR      &kp PERCENT                               &kp DOUBLE_QUOTES  &kp HASH       &kp DOLLAR        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp CARET        &kp AMPS   &kp ASTERISK   &kp UNDERSCORE  &kp PLUS     &trans      &kp EXCLAMATION  &kp PERCENT        &kp AMPERSAND  &kp SQT           &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&kp TILDE        &kp GRAVE  &kp BACKSLASH  &kp PIPE        &kp EQUAL    &trans      &kp QUESTION     &kp TILDE          &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE
+&trans           &trans     &trans         &trans          &trans       &trans      &trans           &trans                                                                    &kp PIPE
             >;
         };
 
         ARROW {
             bindings = <
-&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &globe_q   &globe_e   &globe_s   &globe_d                         &kp ESCAPE              &kp LS(LC(TAB))     &kp UP_ARROW        &kp LC(TAB)          &kp LC(S)
-&globe_a                              &globe_n   &globe_c   &globe_h   &kp LG(Z)  &trans      &trans    &kp HOME                &kp LEFT_ARROW      &kp DOWN_ARROW      &kp RIGHT_ARROW      &kp END
-&kp LG(Z)                             &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))  &trans  &trans   &kp LS(LG(LEFT_ARROW))  &kp LS(LEFT_ARROW)  &kp RG(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp LS(LG(RIGHT_ARROW))
-&trans                                &trans     &trans     &trans     &kp LG(A)  &trans      &trans    &trans                                                                               &trans
+&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &globe_q   &globe_e   &globe_s   &globe_d                           &kp ESCAPE              &kp LS(LC(TAB))     &kp UP_ARROW        &kp LC(TAB)          &kp LC(S)
+&globe_a                              &globe_n   &globe_c   &globe_h   &kp LG(Z)      &trans      &trans  &kp HOME                &kp LEFT_ARROW      &kp DOWN_ARROW      &kp RIGHT_ARROW      &kp END
+&kp LG(Z)                             &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LS(LG(Z))  &trans      &trans  &kp LS(LG(LEFT_ARROW))  &kp LS(LEFT_ARROW)  &kp RG(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp LS(LG(RIGHT_ARROW))
+&trans                                &trans     &trans     &trans     &kp LG(A)      &trans      &trans  &trans                                                                               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -206,10 +263,10 @@
 
         layer_7 {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R               &kp T                                      &kp Y    &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F               &kp G        &tog 0             &kp MINUS  &kp H    &kp J  &kp K      &kp L    &kp SQT
-&kp LS(Z)         &kp X         &kp C         &kp V               &kp B        &kp LS(COLON)      &kp SEMI   &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 LEFT_CONTROL  &lt 1 SPACE  &lt 3 TAB          &kp BSPC   &kp RET                             &kp DEL
+&kp Q         &kp W      &kp E         &kp R               &kp T                                               &kp Y    &kp U  &kp I      &kp O    &kp P
+&kp A         &kp S      &kp D         &kp F               &kp G        &tog 0                      &kp MINUS  &kp H    &kp J  &kp K      &kp L    &kp SQT
+&kp LS(Z)     &kp X      &kp C         &kp V               &kp B        &lt_to_layer_0 6 COLON      &kp SEMI   &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH
+&kp LEFT_WIN  &kp LCTRL  &kp LEFT_ALT  &lt 2 LEFT_CONTROL  &lt 1 SPACE  &lt 3 TAB                   &kp BSPC   &kp RET                             &kp DEL
             >;
         };
     };

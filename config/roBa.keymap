@@ -198,7 +198,7 @@
             bindings = <
 &kp Q             &kp W             &kp E         &kp R            &kp T                                                   &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S             &kp D         &kp F            &kp G        &tog 7                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X             &kp C         &kp V            &kp B        &lt_to_layer_0 6 COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp RS(SLASH)
+&mt LEFT_SHIFT Z  &kp X             &kp C         &kp V            &kp B        &lt_to_layer_0 6 COLON      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp LG(SEMI)
 &kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 2 LC(SPACE)  &lt 1 SPACE  &lt 3 TAB                   &kp BACKSPACE  &lt 6 ENTER                             &lt 6 LC(DELETE)
             >;
 
